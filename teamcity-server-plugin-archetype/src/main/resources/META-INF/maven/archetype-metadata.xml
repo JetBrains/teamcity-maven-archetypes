@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+  name="teamcity-plugin-archetype" partial="false" >
+  <requiredProperties>
+    <requiredProperty key="teamcity-version">
+        <defaultValue>8.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+      <fileSet filtered="true" packaged="false">
+      <directory/>
+      <includes>
+          <include>teamcity-plugin.xml</include>
+      </includes>
+      </fileSet>
+  </fileSets>
+  <modules>
+    <module id="${rootArtifactId}-server" dir="__rootArtifactId__-server" name="${rootArtifactId}-server" >
+      <fileSets>
+        <fileSet filtered="true" packaged="true" >
+          <directory>src/main/java</directory>
+          <includes>
+              <include>**/*.java</include>
+          </includes>
+          <excludes/>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" >
+          <directory>src/main/resources</directory>
+          <includes>
+              <include>**/*</include>
+          </includes>
+          <excludes/>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-assembly" dir="__rootArtifactId__-assembly" name="${rootArtifactId}-assembly" >
+      <fileSets>
+        <fileSet filtered="true" packaged="false" >
+          <directory/>
+          <includes>
+              <include>plugin-assembly.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

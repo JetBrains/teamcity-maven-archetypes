@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<assembly>
+     <id>plugin-agent-assembly</id>
+     <includeBaseDirectory>false</includeBaseDirectory>
+     <formats>
+         <format>zip</format>
+     </formats>
+     <fileSets/>
+     <moduleSets>
+        <moduleSet>
+           <useAllReactorProjects>true</useAllReactorProjects>
+           <includes>
+               <include>${groupId}:${rootArtifactId}-agent</include>
+               <include>${groupId}:${rootArtifactId}-common</include>
+           </includes> 
+           <binaries>
+               <outputDirectory>${rootArtifactId}/lib</outputDirectory>
+               <unpack>false</unpack>
+               <dependencySets>
+                   <dependencySet>
+                        <includes>
+                             <include>*</include>
+                        </includes>
+                   </dependencySet>
+               </dependencySets>
+           </binaries>
+        </moduleSet>
+     </moduleSets>
+</assembly>
+
