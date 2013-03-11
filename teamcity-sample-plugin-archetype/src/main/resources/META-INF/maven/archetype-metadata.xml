@@ -13,6 +13,7 @@
       <directory/>
       <includes>
           <include>teamcity-plugin.xml</include>
+          <include>readme.txt</include>
       </includes>
       </fileSet>
   </fileSets>
