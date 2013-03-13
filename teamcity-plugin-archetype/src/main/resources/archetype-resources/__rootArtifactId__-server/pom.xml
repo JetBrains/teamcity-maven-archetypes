@@ -15,14 +15,14 @@
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>server-api</artifactId>
-      <version>\${teamcity-version}</version>
+      <version>${teamcity-version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>tests-support</artifactId>
-      <version>\${teamcity-version}</version>
+      <version>${teamcity-version}</version>
       <scope>test</scope>
     </dependency>
 
