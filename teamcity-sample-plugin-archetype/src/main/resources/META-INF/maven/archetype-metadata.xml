@@ -65,7 +65,7 @@
         </fileSet>
       </fileSets>
     </module>
-    <module id="${rootArtifactId}-assembly" dir="__rootArtifactId__-assembly" name="${rootArtifactId}-assembly" >
+    <module id="build" dir="build" name="build" >
       <fileSets>
         <fileSet filtered="true" packaged="false" >
           <directory/>
