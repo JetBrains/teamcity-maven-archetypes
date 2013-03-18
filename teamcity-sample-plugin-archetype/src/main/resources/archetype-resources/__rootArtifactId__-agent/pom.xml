@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>agent-api</artifactId>
-      <version>\${teamcity-version}</version>
+      <version>${teamcity-version}</version>
       <scope>provided</scope>
     </dependency>
 
