@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jetbrains.teamcity</groupId>
-  <artifactId>teamcity-server-plugin-archetype</artifactId>
+  <groupId>org.jetbrains.teamcity.archetypes</groupId>
+  <artifactId>teamcity-server-plugin</artifactId>
   <version>8.0-SNAPSHOT</version>
-  <name>Teamcity server-side only plugin archetype</name>
+  <name>TeamCity server-side only plugin archetype</name>
   <url>http://maven.apache.org</url>
   <distributionManagement>
     <repository>
