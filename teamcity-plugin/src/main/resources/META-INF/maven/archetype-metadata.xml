@@ -47,6 +47,12 @@
           </includes>
           <excludes/>
         </fileSet>
+        <fileSet>
+            <directory/>
+            <includes>
+                <include>teamcity-plugin.xml</include>
+            </includes>
+        </fileSet>
       </fileSets>
     </module>
     <module id="${rootArtifactId}-common" dir="__rootArtifactId__-common" name="${rootArtifactId}-common" >
