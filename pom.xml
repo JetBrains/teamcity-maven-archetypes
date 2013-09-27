@@ -18,5 +18,24 @@
       <name>TeamCity Repository</name>
       <url>http://repository.jetbrains.com/teamcity</url>
     </repository>
-  </distributionManagement> 
+  </distributionManagement>
+  <scm>
+    <connection>scm:git:https://github.com/JetBrains/teamcity-maven-archetypes.git</connection>
+    <developerConnection>scm:git:git@github.com:JetBrains/teamcity-maven-archetypes.git</developerConnection>
+    <url>https://github.com/JetBrains/teamcity-maven-archetypes.git</url>
+    <tag>HEAD</tag>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.4.1</version>
+        <configuration>
+          <useReleaseProfile>false</useReleaseProfile>
+          <releaseProfiles>release</releaseProfiles>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
