@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.jetbrains.teamcity.archetypes</groupId>
     <artifactId>maven-teamcity-archetypes</artifactId>
-    <version>8.1.4-SNAPSHOT</version>
+    <version>8.1.4</version>
   </parent>
   <artifactId>teamcity-plugin</artifactId>
   <name>TeamCity plugin archetype</name>
