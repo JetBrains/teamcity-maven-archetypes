@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jetbrains.teamcity.archetypes</groupId>
   <artifactId>maven-teamcity-archetypes</artifactId>
-  <version>8.1.4</version>
+  <version>8.1.5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TeamCity plugin archetypes parent project</name>
   <url>http://maven.apache.org</url>
@@ -22,7 +22,7 @@
     <connection>scm:git:https://github.com/JetBrains/teamcity-maven-archetypes.git</connection>
     <developerConnection>scm:git:git@github.com:JetBrains/teamcity-maven-archetypes.git</developerConnection>
     <url>https://github.com/JetBrains/teamcity-maven-archetypes.git</url>
-    <tag>maven-teamcity-archetypes-8.1.4</tag>
+    <tag>HEAD</tag>
   </scm>
   <build>
     <plugins>
