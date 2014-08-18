@@ -1,3 +1,4 @@
+#set( $prefix = '${teamcity.' )
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -5,6 +6,9 @@
   <packaging>pom</packaging>
   <properties>
       <maven.build.timestamp.format>yyyyddMMHHmmss</maven.build.timestamp.format>
+      <teamcity.${rootArtifactId}.plugin.version>snapshot-${maven.build.timestamp}</teamcity.${rootArtifactId}.plugin.version>
+      <teamcity.${rootArtifactId}.plugin.vendorName>Plugin vendor name</teamcity.${rootArtifactId}.plugin.vendorName>
+      <teamcity.${rootArtifactId}.plugin.vendorUrl>Plugin vendor URL</teamcity.${rootArtifactId}.plugin.vendorUrl>
   </properties>
   <dependencies>
       <dependency>
@@ -43,7 +47,15 @@
                 <replacements>
                     <replacement>
                         <token>@Version@</token>
-                        <value>snapshot-${maven.build.timestamp}</value>
+                        <value>$prefix${rootArtifactId}.plugin.version}</value>
+                    </replacement>
+                    <replacement>
+                        <token>@VendorName@</token>
+                        <value>$prefix${rootArtifactId}.plugin.vendorName}</value>
+                    </replacement>
+                    <replacement>
+                        <token>@VendorURL@</token>
+                        <value>$prefix${rootArtifactId}.plugin.vendorUrl}</value>
                     </replacement>
                 </replacements>                        
             </configuration>
