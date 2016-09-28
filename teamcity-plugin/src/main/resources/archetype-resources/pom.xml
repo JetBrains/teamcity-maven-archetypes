@@ -6,7 +6,7 @@
   <version>$version</version>
   <packaging>pom</packaging>
   <properties>
-      <teamcity-version>${project.version}</teamcity-version>
+      <teamcity-version>${teamcityVersion}</teamcity-version>
   </properties>
   <repositories>
     <repository>
