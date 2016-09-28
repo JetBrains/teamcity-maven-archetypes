@@ -3,18 +3,11 @@
   <parent>
    <groupId>org.jetbrains.teamcity.archetypes</groupId>
    <artifactId>maven-teamcity-archetypes</artifactId>
-   <version>9.0.4-SNAPSHOT</version>
+   <version>1.0</version>
   </parent>
   <artifactId>teamcity-server-plugin</artifactId>
   <name>TeamCity server-side only plugin archetype</name>
   <url>http://maven.apache.org</url>
-  <distributionManagement>
-    <repository>
-      <id>teamcity.repo</id>
-      <name>TeamCity Repository</name>
-      <url>http://repository.jetbrains.com/teamcity</url>
-    </repository>
-  </distributionManagement> 
     <build>
      <resources>
        <resource>
