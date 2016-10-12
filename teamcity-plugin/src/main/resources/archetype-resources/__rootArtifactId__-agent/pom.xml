@@ -4,7 +4,7 @@
   <artifactId>${artifactId}</artifactId>
   <packaging>jar</packaging>
   <dependencies>
-    
+
     <dependency>
       <groupId>$groupId</groupId>
       <artifactId>${rootArtifactId}-common</artifactId>
@@ -27,4 +27,18 @@
     </dependency>
 
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
