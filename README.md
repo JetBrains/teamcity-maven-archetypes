@@ -5,4 +5,4 @@ teamcity-maven-archetypes
 
 Archetypes for Teamcity Plugins
 
-See https://www.jetbrains.com/help/docs/teamcity/developing-plugins-using-maven.html for details
+See https://plugins.jetbrains.com/docs/teamcity/developing-plugins-using-maven.html for details
