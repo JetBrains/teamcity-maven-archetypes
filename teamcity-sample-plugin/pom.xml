@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.jetbrains.teamcity.archetypes</groupId>
     <artifactId>maven-teamcity-archetypes</artifactId>
-    <version>1.3.1</version>
+    <version>1.4.0</version>
   </parent>
   <artifactId>teamcity-sample-plugin</artifactId>
   <name>TeamCity plugin archetype with sample code</name>
